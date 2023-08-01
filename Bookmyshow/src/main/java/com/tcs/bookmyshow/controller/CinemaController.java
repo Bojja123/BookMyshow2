@@ -36,6 +36,7 @@ public class CinemaController {
 
 	@GetMapping("/getAllCinemaDetailes")
 	public Iterable<Cinema> getAllCinemadetailes() {
+		System.out.println("inside method2");
 		return cinemaService.getAllCinemadetailes();
 
 	}
