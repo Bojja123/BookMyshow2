@@ -23,6 +23,7 @@ public class CinemaController {
 
 	@PostMapping("saveCinemaDetailes")
 	public CinemaResponseWrapper saveCinemaDetailes(@RequestBody CinemaDto cinemaDto) {
+		System.out.println("inside method");
 		
 		Cinema cinemaobj= cinemaService.saveCinemaDetailes(cinemaDto);
 		CinemaResponseWrapper responseWrapper=new CinemaResponseWrapper();
